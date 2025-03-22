@@ -1,7 +1,7 @@
 export default function Navbar({setPage}) {
 
   return (
-    <div className="flex justify-between p-4 fixed inset-x-0 bottom-0 z-50 border-t border-[#6c757d]">
+    <div className="flex text-bold justify-between p-4 fixed inset-x-0 bottom-0 z-50 border-t border-[#6c757d]">
       <button onClick={() => {
         setPage("/")
       }} className="cursor-pointer p-1">
