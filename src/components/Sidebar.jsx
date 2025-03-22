@@ -12,7 +12,7 @@ export default function Sidebar() {
                 <FaTrash />
                 <FaDownload />
                 <p>Cancel</p>
-                <button className="text-cyan-700">Save Note</button>
+                <button className="text-cyan-600">Save Note</button>
             </div>
             </div>
             <div className="border border-b-1 border-[#8d8d91] mb-[20px] mr-[20px] ml-[20px]">
