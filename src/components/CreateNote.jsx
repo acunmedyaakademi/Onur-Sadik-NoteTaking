@@ -43,11 +43,11 @@ export default function CreateNote() {
           {selectedTags.map(t => t).join(", ")}
         </div>
       </div>
-      <div className="w-full max-w-md mb-3 border rounded p-1">
-        <input type="text" placeholder="Note Header" />
+      <div className="w-full h-[50px] max-w-md mb-3 rounded p-1">
+        <input className="w-full h-full" type="text" placeholder="Note Header" />
       </div>
-      <div className="w-full max-w-md">
-        <textarea className="w-[425px] p-1 h-50 border rounded" placeholder="Take Note" ></textarea>
+      <div className="w-screen h-screen max-w-md">
+        <textarea className="w-full p-1 h-[50%] rounded" placeholder="Take Note" ></textarea>
       </div>
     </div>
   )
