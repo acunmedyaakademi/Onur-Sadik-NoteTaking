@@ -31,7 +31,7 @@ export default function CreateNote() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center pr-[20px] pl-[20px]">
+    <div className="flex xl:grid-cols-12 flex-col items-center justify-center pr-[20px] pl-[20px]">
             <div className="w-full pr-[20px] pl-[20px] h-[50px] mb-3 rounded p-1">
         <input className="w-full h-full" type="text" placeholder="Note Header" />
       </div>

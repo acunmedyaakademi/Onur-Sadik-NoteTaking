@@ -2,7 +2,7 @@ import { FaArrowLeft, FaCalculator, FaDownload, FaTrash } from "react-icons/fa";
 
 export default function Sidebar() {
     return(
-        <div className="flex justify-center flex-col  text-[#8d8d91]">
+        <div className="flex xl:hidden justify-center flex-col  text-[#8d8d91]">
             <div className="flex justify-between w-screen p-[20px]">
             <div className="flex  items-center gap-[20px]">
             <FaArrowLeft />
