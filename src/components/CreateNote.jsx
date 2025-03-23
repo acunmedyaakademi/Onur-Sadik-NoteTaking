@@ -47,7 +47,7 @@ export default function CreateNote() {
         </div>
       </div>
       <div className="w-screen h-screen pr-[20px] pl-[20px]">
-        <textarea className="w-full p-1 h-[50%] rounded" placeholder="Take Note" ></textarea>
+        <textarea className="w-full p-1 h-[80%] rounded" placeholder="Take Note" ></textarea>
       </div>
     </div>
   )
