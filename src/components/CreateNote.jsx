@@ -31,7 +31,18 @@ export default function CreateNote() {
 
 
   return (
-    <div className="flex xl:grid-cols-12 flex-col items-center justify-center pr-[20px] pl-[20px]">
+    <div className="xl:grid xl:grid-cols-12 xl:w-screen">
+      <div className="hidden h-screen xl:grid xl:col-span-2">
+      <div className="border-r h-screen">
+
+      </div>
+      </div>
+      <div className="hidden h-screen xl:grid xl:col-span-2">
+      <div className="border-r h-screen">
+
+      </div>
+    </div>
+      <div className="flex xl:col-span-6 flex-col items-center justify-center pr-[20px] pl-[20px]">
             <div className="w-full pr-[20px] pl-[20px] h-[50px] mb-3 rounded p-1">
         <input className="w-full h-full" type="text" placeholder="Note Header" />
       </div>
@@ -46,9 +57,21 @@ export default function CreateNote() {
           {selectedTags.map(t => t).join(", ")}
         </div>
       </div>
-      <div className="w-screen h-screen pr-[20px] pl-[20px]">
-        <textarea className="w-full p-1 h-[80%] rounded" placeholder="Take Note" ></textarea>
+      <div className="w-screen h-screen xl:w-full xl:h-full pr-[20px] pl-[20px]">
+        <textarea className="w-full p-1 h-[80%] xl:w-full rounded" placeholder="Take Note" ></textarea>
+      </div>
+      <div className="hidden xl:flex border border-r xl:w-full w-screen mb-[20px] text-[#727892]">
+
+      </div>
+      <div className="hidden xl:flex w-full  pl-[40px] justify-start gap-5">
+          <button className="p-[20px] bg-[#305cfd] rounded-lg text-[white]">Save Note</button>
+          <button className="p-[20px] bg-[#dbe4e5] rounded-lg text-[#727892]">Cancel</button>
       </div>
     </div>
+    <div className="hidden xl:flex xl:col-span-2 ">
+
+    </div>
+    </div>
+   
   )
 }
