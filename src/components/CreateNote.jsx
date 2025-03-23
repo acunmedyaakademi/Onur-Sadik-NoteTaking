@@ -31,18 +31,13 @@ export default function CreateNote() {
 
 
   return (
-    <div className="xl:grid xl:grid-cols-12 xl:w-screen">
-      <div className="hidden h-screen xl:grid xl:col-span-2">
+    <div className=" xl:w-screen  ">
+      <div className="hidden h-screen  ">
       <div className="border-r h-screen">
 
       </div>
       </div>
-      <div className="hidden h-screen xl:grid xl:col-span-2">
-      <div className="border-r h-screen">
-
-      </div>
-    </div>
-      <div className="flex xl:col-span-6 flex-col items-center justify-center pr-[20px] pl-[20px]">
+      <div className="flex flex-col items-center justify-center pr-[20px] pl-[20px]">
             <div className="w-full pr-[20px] pl-[20px] h-[50px] mb-3 rounded p-1">
         <input className="w-full h-full" type="text" placeholder="Note Header" />
       </div>
@@ -68,9 +63,7 @@ export default function CreateNote() {
           <button className="p-[20px] bg-[#dbe4e5] rounded-lg text-[#727892]">Cancel</button>
       </div>
     </div>
-    <div className="hidden xl:flex xl:col-span-2 ">
 
-    </div>
     </div>
    
   )
