@@ -1,4 +1,7 @@
 import { FaArrowLeft, FaCalculator, FaDownload, FaHome, FaTag, FaTrash } from "react-icons/fa";
+import AllNotes from "./AllNotes";
+import ArchivedNotes from "./ArchivedNotes";
+import Tags from "./Tags";
 
 export default function Sidebar() {
     return(
@@ -25,40 +28,19 @@ export default function Sidebar() {
             <h1 className="cursor-pointer">Notes</h1>
           </div>
           <div className="py-3 ">
-            <div className="flex gap-3 items-center py-4 px-4 hover:bg-[#F4F5F8] rounded-lg text-[#737378] hover:text-[#325CFE] cursor-pointer hover:shadow-lg">
-              <FaHome />
-              <button className="cursor-pointer">All Notes</button>
+            <div>
+                <AllNotes />
             </div>
-            <div className="flex gap-3 items-center px-4 py-4 hover:bg-[#F4F5F8] rounded-lg text-[#737378] hover:text-[#325CFE] cursor-pointer hover:shadow-lg">
-              <FaDownload />
-              <button className="cursor-pointer">Archived Notes</button>
+            <div>
+                <ArchivedNotes />
             </div>
           </div>
 
 
         </div>
-        <div className="py-4 px-4">
-          <div className="text-[#737378] mb-5">
-          <h1>Tags</h1>
-          </div>
-          <div className="flex items-center gap-3 mb-3">
-          <div className="text-[#737378] cursor-pointer">
-            <FaTag />
-          </div>
-          <div className="cursor-pointer">
-            <p>Cooking</p>
-          </div>
-          </div>
-          <div className="flex items-center gap-3 mb-3">
-          <div className="text-[#737378] cursor-pointer">
-            <FaTag />
-          </div>
-          <div className="cursor-pointer">
-            <p>Cooking</p>
-          </div>
-          </div>
-
-        </div>
+            <div>
+                <Tags />
+            </div>
       </div>
         </div>
 

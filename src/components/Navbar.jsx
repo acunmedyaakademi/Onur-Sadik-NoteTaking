@@ -1,5 +1,6 @@
 import { FaSearch } from "react-icons/fa"
 import { FaGear } from "react-icons/fa6"
+import Search from "./Search"
 
 export default function Navbar({ setPage }) {
 
@@ -29,10 +30,9 @@ export default function Navbar({ setPage }) {
             <h1>All Notes</h1>
           </div>
           <div className="flex gap-5 py-2">
-            <div class="text-[#E8E8EA] flex items-center w-[350px] px-5 py-4 gap-5 border border-[#E8E8EA] rounded-lg hover:border-[#325CFE] shadow-lg ">
-              <FaSearch className="hover:text-[black]" />
-              <input className="w-full outline-none text-[black]" type="text" id="searchInput" placeholder="Search by title, content or tags..." />
-            </div>
+          <div>
+            <Search />
+          </div>
             <div className="flex items-center  px-5">
               <FaGear className="cursor-pointer" />
             </div>
