@@ -31,21 +31,33 @@ export default function CreateNote() {
 
 
   return (
-    <div className="xl:w-screen grid grid-cols-12 ">
-      <div className="hidden xl:block col-span-3 h-screen">
-        <div className="border-r h-screen">
+    <div className="xl:w-screen xl:grid xl:grid-cols-11 ">
+      <div className="hidden xl:block xl:col-span-2 ">
+        <div className="xl:p-5 border-b flex flex-col">
+        <h1>Notes</h1>
+
+        <button className="pr-[40px] pl-[20px] pt-[20px] pb-[10px]">All Notes</button>
+        <button className="pr-[40px] pl-[20px] pt-[20px] pb-[10px]">Archived Notes</button>
 
         </div>
-      </div>
-      <div className="col-span-9">
-        <div className="p-10 border-b">
-        <h1>All Notes</h1>
+        <div className="xl:p-5">
+          <h1>Tags</h1>
         </div>
-        <div className="flex">
-        <div className="border-r h-screen">
+      </div>
+      <div className="xl:col-span-9">
+        <div className="xl:p-[40px] xl:pb-[20px] border-b xl:border-l">
+          <div>
+          <h1>All Notes</h1>
+          </div>
+          <div>
+            <input type="text" />
+          </div>
+        </div>
+        <div className="xl:grid xl:grid-cols-12 xl:h-screen xl:border-l">
+        <div className="xl:border-r xl:h-screen xl:col-span-3 hidden xl:block xl:p-5">
         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore cum nostrum accusantium totam? Facere, et odit sapiente odio placeat porro magnam, ex non eaque neque culpa libero repellat provident!</h1>
         </div>
-        <div className="border-r flex flex-col items-center justify-center pr-[20px] pl-[20px]">
+        <div className="xl:col-span-6 xl:border-r flex flex-col items-center justify-center xl:p-5">
         <div className="w-full pr-[20px] pl-[20px] h-[50px] mb-3 rounded p-1">
           <input className="w-full h-full" type="text" placeholder="Note Header" />
         </div>
@@ -71,7 +83,7 @@ export default function CreateNote() {
           <button className="p-[20px] bg-[#dbe4e5] rounded-lg text-[#727892]">Cancel</button>
         </div>
       </div>
-        <div className="">
+        <div className="xl:col-span-3 hidden xl:block xl:p-5">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quod quasi doloremque, mollitia necessitatibus temporibus provident pariatur perferendis animi facilis? Nemo, odio distinctio magnam cum modi impedit quam. Perspiciatis, dolorem.</h1>
         </div>
         </div>
