@@ -42,11 +42,11 @@ export default function CreateNote() {
           <div className="py-3 ">
             <div className="flex gap-3 items-center py-4 px-4 hover:bg-[#F4F5F8] rounded-lg text-[#737378] hover:text-[#325CFE] cursor-pointer hover:shadow-lg">
               <FaHome />
-              <button className="hover:text-[black]">All Notes</button>
+              <button className="cursor-pointer">All Notes</button>
             </div>
             <div className="flex gap-3 items-center px-4 py-4 hover:bg-[#F4F5F8] rounded-lg text-[#737378] hover:text-[#325CFE] cursor-pointer hover:shadow-lg">
               <FaDownload />
-              <button className="">Archived Notes</button>
+              <button className="cursor-pointer">Archived Notes</button>
             </div>
           </div>
 
@@ -165,11 +165,11 @@ export default function CreateNote() {
             <div className="flex flex-col gap-5">
               <div className="border-[#E8E8EA] border w-full rounded-lg flex items-center justify-start gap-5 pl-5 py-4 bg-[#FFFFFF] shadow-lg text-[#36363E] hover:bg-[#F4F5F8] cursor-pointer">
                 <FaDownload />
-                <button className="text-base/8"> Archive Note</button>
+                <button className="text-base/8 cursor-pointer"> Archive Note</button>
               </div>
               <div className="border-[#E8E8EA] border w-full rounded-lg flex items-center justify-start gap-5 pl-5 py-4 bg-[#FFFFFF] shadow-lg text-[#36363E] hover:bg-[#F4F5F8] cursor-pointer">
                 <FaTrash />
-                <button className="text-base/8"> Delete Note</button>
+                <button className="text-base/8 cursor-pointer"> Delete Note</button>
               </div>
             </div>
           </div>
