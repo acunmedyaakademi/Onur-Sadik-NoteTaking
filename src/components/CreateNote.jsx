@@ -52,8 +52,8 @@ export default function CreateNote() {
 
       </div>
       <div className="hidden xl:flex w-full  pl-[40px] gap-5">
-        <button className="p-[20px] bg-[#305cfd] rounded-lg text-[white]">Save Note</button>
-        <button className="p-[20px] bg-[#dbe4e5] rounded-lg text-[#727892]">Cancel</button>
+        <button className="p-[20px] bg-[#305cfd] rounded-lg text-[white] cursor-pointer hover:shadow-2xl transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500">Save Note</button>
+        <button className="p-[20px] bg-[#dbe4e5] rounded-lg text-[#727892] cursor-pointer transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-gray">Cancel</button>
       </div>
     </div>
   )
