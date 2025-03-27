@@ -1,13 +1,13 @@
 import CreateNote from "./CreateNote";
 import Navbar from "./Navbar";
 import NewNotes from "./NewNotes";
-import Sidebar from "./sidebar";
+import Sidebar from "./Sidebar";
 import SideButton from "./SideButton";
 
 export default function Homepage() {
 
   return (
-      <div className="xl:w-screen xl:grid xl:grid-cols-11 xl:items-start md:flex md:flex-col md:items-center md:justify-center md:w-full">
+      <div className="font-mono xl:w-screen xl:grid xl:grid-cols-11 xl:items-start md:flex md:flex-col md:items-center md:justify-center md:w-full">
         <div className="xl:col-span-2 xl:px-5">
           <Sidebar />
         </div>
