@@ -2,11 +2,8 @@ import { useState } from 'react'
 import Homepage from './components/HomePage'
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [page, setPage] = useState("");
 
-  const addNote = (newNote) => {
-    setNotes([...notes, newNote]);
-  }
 
   return (
     <>
